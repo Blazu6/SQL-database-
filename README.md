@@ -6,9 +6,9 @@ Projekt ten przedstawia strukturę bazy danych zaprojektowaną do zarządzania p
 
 ## Zawartość
 - **DDL**: Skrypty SQL do tworzenia struktury bazy danych.
-- **DML**
-- **ERD Diagram**
-- **RDD Diagram**
+- **DML**: Skrypty SQL do wstawiania przykładowych danych.
+- **ERD Diagram**: Diagram encji.
+- **RDD Diagram**: Diagram relacji.
 
 ## Struktura Tabel
 ### 1. **Kategorie**
