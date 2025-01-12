@@ -270,8 +270,38 @@ VALUES (4, 20, 5, 4);
 INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
 VALUES (5, 100, 30, 5);
 
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (6, 150, 20, 6);
+
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (7, 120, 10, 7);
+
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (8, 200, 50, 8);
+
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (9, 80, 15, 9);
+
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (10, 60, 25, 10);
+
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (11, 90, 35, 11);
+
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (12, 110, 40, 12);
+
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (13, 140, 50, 13);
+
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (14, 160, 30, 14);
+
+INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
+VALUES (15, 180, 60, 15);
+
+
 -- Wstawianie danych do tabeli ZAMOWIONE_TOWARY
--- Przykładowe dane do tabeli zamowione_towary
 INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
 VALUES (2, 4500.00, 1, 1);  -- Zamówienie 1, Laptop Lenovo
 
