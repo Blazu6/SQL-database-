@@ -174,9 +174,82 @@ VALUES (14, 'Tablet iPad Pro 12.9', 'M2 Chip, 128GB', 4900.00, NULL, 5, 1);
 INSERT INTO towary (id_towaru, nazwa_towaru, parametry, cena, zdjecie, kategorie_id_kategori, producenci_id_producenta) 
 VALUES (15, 'Router TP-Link AX73', 'WiFi 6, 5400 Mbps', 700.00, NULL, 4, 2);
 
+-- Wstawianie danych do tabeli TRANSAKCJE
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (1, TO_DATE('2023-04-10', 'YYYY-MM-DD'), 4500.00, 'zrealizowana', 1);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (2, TO_DATE('2023-04-12', 'YYYY-MM-DD'), 2500.00, 'zrealizowana', 2);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (3, TO_DATE('2023-04-14', 'YYYY-MM-DD'), 3200.00, 'oczekujaca', 3);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (4, TO_DATE('2023-04-16', 'YYYY-MM-DD'), 1500.00, 'zrealizowana', 4);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (5, TO_DATE('2023-04-18', 'YYYY-MM-DD'), 2300.00, 'oczekujaca', 1);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (6, TO_DATE('2023-04-20', 'YYYY-MM-DD'), 250.00, 'zrealizowana', 2);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (7, TO_DATE('2023-04-22', 'YYYY-MM-DD'), 650.00, 'oczekujaca', 3);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (8, TO_DATE('2023-04-24', 'YYYY-MM-DD'), 1800.00, 'zrealizowana', 4);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (5, TO_DATE('2023-04-18', 'YYYY-MM-DD'), 2300.00, 'oczekujaca', 5);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (6, TO_DATE('2023-04-20', 'YYYY-MM-DD'), 250.00, 'zrealizowana', 6);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (7, TO_DATE('2023-04-22', 'YYYY-MM-DD'), 650.00, 'oczekujaca', 7);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (8, TO_DATE('2023-04-24', 'YYYY-MM-DD'), 1800.00, 'zrealizowana', 8);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (9, TO_DATE('2023-04-26', 'YYYY-MM-DD'), 1900.00, 'oczekujaca', 9);
+
+INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
+VALUES (10, TO_DATE('2023-04-28', 'YYYY-MM-DD'), 450.00, 'zrealizowana', 10);
+
+
 -- Wstawianie danych do tabeli ZAMOWIENIA
 
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (1, 1, 1, 1);
 
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (2, 2, 2, 2);
+
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (3, 3, 3, 3);
+
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (4, 4, 4, 4);
+
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (5, 5, 5, 5);
+
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (6, 1, 6, 6);
+
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (7, 2, 7, 7);
+
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (8, 3, 8, 8);
+
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (9, 4, 9, 9);
+
+INSERT INTO zamowienia (id_zamowienia, kooperanci_id_kooperanta, klienci_id_klienta, transakcje_id_transakcji)
+VALUES (10, 5, 10, 10);
 
 -- Wstawianie danych do tabeli REKLAMACJE
 INSERT INTO reklamacje (id_reklamacji, data_reklamacji, opis, status, zamowienia_id_zamowienia, klienci_id_klienta, kooperanci_id_kooperanta) 
@@ -209,5 +282,40 @@ VALUES (4, 20, 5, 4);
 
 INSERT INTO stan_magazynu (id_stan, dostepna_ilosc, ilosc_zarezerwowana, towary_id_towaru) 
 VALUES (5, 100, 30, 5);
+
+-- Wstawianie danych do tabeli ZAMOWIONE_TOWARY
+-- Przykładowe dane do tabeli zamowione_towary
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (2, 4500.00, 1, 1);  -- Zamówienie 1, Laptop Lenovo
+
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (1, 2500.00, 2, 2);  -- Zamówienie 2, Smartfon Samsung
+
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (3, 3200.00, 3, 3);  -- Zamówienie 3, Telewizor Sony 4K
+
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (1, 1500.00, 4, 4);  -- Zamówienie 4, Pralka Samsung
+
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (2, 2300.00, 5, 5);  -- Zamówienie 5, Konsola Playstation 5
+
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (1, 250.00, 6, 6);  -- Zamówienie 6, Mysz Logitech G502
+
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (4, 650.00, 7, 7);  -- Zamówienie 7, Klawiatura Mechaniczna Razer
+
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (1, 1800.00, 8, 8);  -- Zamówienie 8, Monitor Dell UltraSharp
+
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (3, 1900.00, 9, 9);  -- Zamówienie 9, Smartwatch Apple Watch Series 8
+
+INSERT INTO zamowione_towary (ilosc, cena_za_sztuke, zamowienia_id_zamowienia, towary_id_towaru)
+VALUES (1, 450.00, 10, 10);  -- Zamówienie 10, Głośnik JBL Flip 6
+
+
+
 
 
