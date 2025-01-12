@@ -177,47 +177,34 @@ VALUES (15, 'Router TP-Link AX73', 'WiFi 6, 5400 Mbps', 700.00, NULL, 4, 2);
 -- Wstawianie danych do tabeli TRANSAKCJE
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (1, TO_DATE('2023-04-10', 'YYYY-MM-DD'), 4500.00, 'zrealizowana', 1);
+VALUES (1, TO_DATE('2023-04-10', 'YYYY-MM-DD'), 4500.00, 'oczekujaca', 1);
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
 VALUES (2, TO_DATE('2023-04-12', 'YYYY-MM-DD'), 2500.00, 'zrealizowana', 2);
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (3, TO_DATE('2023-04-14', 'YYYY-MM-DD'), 3200.00, 'oczekujaca', 3);
+VALUES (3, TO_DATE('2023-04-14', 'YYYY-MM-DD'), 3200.00, 'zrealizowana', 3);
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (4, TO_DATE('2023-04-16', 'YYYY-MM-DD'), 1500.00, 'zrealizowana', 4);
+VALUES (4, TO_DATE('2023-04-16', 'YYYY-MM-DD'), 1500.00, 'oczekujaca', 4);
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (5, TO_DATE('2023-04-18', 'YYYY-MM-DD'), 2300.00, 'oczekujaca', 1);
+VALUES (5, TO_DATE('2023-04-18', 'YYYY-MM-DD'), 2300.00, 'zrealizowana', 5);
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (6, TO_DATE('2023-04-20', 'YYYY-MM-DD'), 250.00, 'zrealizowana', 2);
+VALUES (6, TO_DATE('2023-04-20', 'YYYY-MM-DD'), 250.00, 'oczekujaca', 6);
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (7, TO_DATE('2023-04-22', 'YYYY-MM-DD'), 650.00, 'oczekujaca', 3);
-
-INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (8, TO_DATE('2023-04-24', 'YYYY-MM-DD'), 1800.00, 'zrealizowana', 4);
-
-INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (5, TO_DATE('2023-04-18', 'YYYY-MM-DD'), 2300.00, 'oczekujaca', 5);
-
-INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (6, TO_DATE('2023-04-20', 'YYYY-MM-DD'), 250.00, 'zrealizowana', 6);
-
-INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (7, TO_DATE('2023-04-22', 'YYYY-MM-DD'), 650.00, 'oczekujaca', 7);
+VALUES (7, TO_DATE('2023-04-22', 'YYYY-MM-DD'), 650.00, 'zrealizowana', 7);
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
 VALUES (8, TO_DATE('2023-04-24', 'YYYY-MM-DD'), 1800.00, 'zrealizowana', 8);
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
-VALUES (9, TO_DATE('2023-04-26', 'YYYY-MM-DD'), 1900.00, 'oczekujaca', 9);
+VALUES (9, TO_DATE('2023-04-26', 'YYYY-MM-DD'), 1900.00, 'zrealizowana', 9);
 
 INSERT INTO transakcje (id_transakcji, data_transakcji, kwota, status, platnosci_id_platnosci)
 VALUES (10, TO_DATE('2023-04-28', 'YYYY-MM-DD'), 450.00, 'zrealizowana', 10);
-
 
 -- Wstawianie danych do tabeli ZAMOWIENIA
 
