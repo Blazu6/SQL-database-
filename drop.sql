@@ -13,14 +13,15 @@ ALTER TABLE zamowienia DROP CONSTRAINT zamowienia_kooperanci_fk;
 ALTER TABLE zamowienia DROP CONSTRAINT zamowienia_transakcje_fk;
 
 -- Usuwanie tabel
-DROP TABLE IF EXISTS zamowienia;
-DROP TABLE IF EXISTS zamowione_towary;
-DROP TABLE IF EXISTS transakcje;
-DROP TABLE IF EXISTS towary;
-DROP TABLE IF EXISTS stan_magazynu;
-DROP TABLE IF EXISTS reklamacje;
-DROP TABLE IF EXISTS producenci;
-DROP TABLE IF EXISTS platnosci;
-DROP TABLE IF EXISTS kooperanci;
-DROP TABLE IF EXISTS klienci;
-DROP TABLE IF EXISTS kategorie;
+DROP TABLE zamowienia;
+DROP TABLE zamowione_towary;
+DROP TABLE transakcje;
+DROP TABLE towary;
+DROP TABLE stan_magazynu;
+DROP TABLE reklamacje;
+DROP TABLE producenci;
+DROP TABLE platnosci;
+DROP TABLE kooperanci;
+DROP TABLE klienci;
+DROP TABLE kategorie;
+
